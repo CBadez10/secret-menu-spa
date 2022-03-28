@@ -1,0 +1,50 @@
+@font-face {
+    font-family: Inter-SemiBold;
+    src: local(Inter-SemiBold), url(../src/fonts/Inter-SemiBold.ttf) format('truetype');
+}
+
+body {
+    font-family: 'Inter-SemiBold' !important;
+}
+
+.coffee-main {
+    float: left;
+    width: 50%;
+}
+
+.car {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.caritem {
+    flex-direction: column;
+}
+
+.row.icons {
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+.col.icons {
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.container.mid {
+    margin-top: 50px;
+    height: 300px;
+}
+
+.col.first {
+    background-color: #1e3932;
+    width: 100%;
+    height: 300px;
+}
+
+.col.second {
+    background-color: #d4e9e2;
+    width: 100%;
+    height: 300px;
+}

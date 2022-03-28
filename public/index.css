@@ -1,0 +1,15 @@
+.container-fluid.footer {
+    background-color: #1e3932;
+}
+
+.footer-list {
+    color: white;
+    height: 200px;
+    display: flex;
+    list-style: none;
+    padding-left: 0px;
+    margin-bottom: 0px;
+    padding-top: 50px;
+    justify-content: space-evenly;
+    
+}

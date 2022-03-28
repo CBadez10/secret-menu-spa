@@ -15,8 +15,8 @@ const ImageCarousel = () => {
             alt="First slide"
             />
             <Carousel.Caption>
-            <h3>Hot coffees</h3>
-            <p>Coffee, Lattes anything hot and </p>
+            <h3>Hot Coffee Drinks</h3>
+            <p>Coffee, lattes, and espresso drinks, all served hot</p>
             </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
@@ -25,10 +25,9 @@ const ImageCarousel = () => {
             src={icedCoffeePic}
             alt="Second slide"
             />
-
             <Carousel.Caption>
-            <h3>Iced Coffees</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <h3>Iced Coffee Drinks</h3>
+            <p>Coffee, lattes, and espresso drinks, all served over ice</p>
             </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
@@ -37,10 +36,9 @@ const ImageCarousel = () => {
             src={frappePic}
             alt="Third slide"
             />
-
             <Carousel.Caption>
             <h3>Frappuccinos</h3>
-            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+            <p>Starbuck's signature blended ice drinks</p>
             </Carousel.Caption>
         </Carousel.Item>
         </Carousel>

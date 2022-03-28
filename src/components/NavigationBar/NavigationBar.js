@@ -1,13 +1,15 @@
 import React from 'react';
 import Navbar from 'react-bootstrap/Navbar';
 import { Nav, Container, NavDropdown } from 'react-bootstrap';
+import logo from '../../images/header-icon.jpg';
 import './NavigationBar.css'
 
 
 const NavigationBar = (props) => {
     return (
-        <Navbar bg='light' bsPrefix='navbar' fixed='top' expand="lg">
+        <Navbar bg='white' bsPrefix='navbar' fixed='top' expand="lg">
             <Container>
+                <img className='header logo' src={logo} />
                 <Navbar.Brand href="#home">Pocket Barista</Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
