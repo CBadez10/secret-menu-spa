@@ -1,5 +1,4 @@
 import ImageCarousel from './components/imageCarousel/ImageCarousel';
-import NavigationBar from './components/NavigationBar/NavigationBar';
 import createIcon from './images/createDrink.jpg'
 import likeIcon from './images/like.jpg'
 import magGlassIcon from './images/magGlass.jpg'
@@ -8,8 +7,6 @@ import './app.css';
 function App() {
   return (
     <>
-    
-    <NavigationBar />
     <div className='carousel-main'>
       <ImageCarousel className='carousel-main item'/>
     </div>
