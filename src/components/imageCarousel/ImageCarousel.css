@@ -1,0 +1,14 @@
+.imaget {
+
+}
+
+/* .carousel {
+    width: 80%;
+} */
+.carousel-inner {
+    height: 500px;
+}
+
+.carousel-item {
+    position: unset !important;
+}

@@ -1,24 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import ImageCarousel from './components/imageCarousel/ImageCarousel';
+import NavigationBar from './components/NavigationBar/NavigationBar';
+import createIcon from './images/createDrink.jpg'
+import likeIcon from './images/like.jpg'
+import magGlassIcon from './images/magGlass.jpg'
+import './index.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <>
+    <NavigationBar />
+    <div className='car'>
+      <ImageCarousel className='caritem'/>
     </div>
+    <div className='box-row'>
+      <div className='box-item'>
+        <img src={magGlassIcon} />
+        <p>Find new ideas and creations</p>
+      </div>
+      <div className='box-item'>
+        <img src={createIcon} />
+        <p>Make your own unique recipes</p>
+      </div>
+      <div className='box-item'>
+        <img src={likeIcon} />
+        <p>Rate and share for others to see</p>
+      </div>
+    </div>
+    </>
   );
 }
 
