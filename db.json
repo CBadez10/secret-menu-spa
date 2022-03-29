@@ -1,0 +1,36 @@
+{
+  "drinks": [
+    {
+      "id": 1,
+      "title": "Caffè Latte",
+      "description": "Dark, rich espresso balanced with steamed milk and a light layer of foam. A perfect milk-forward warm-up.",
+      "image": "../../images/hot-drinks/latte.jpg"
+    },
+    {
+      "id": 2,
+      "title": "Caffè Mocha",
+      "description": "Rich, full-bodied espresso combined with bittersweet mocha sauce and steamed milk, then topped with sweetened whipped cream. The classic coffee drink that always sweetly satisfies.",
+      "image": "../../images/hot-drinks/latte.jpg"
+    },
+    {
+      "id": 3,
+      "title": "Caramel Macchiato",
+      "description": "Freshly steamed milk with vanilla-flavored syrup marked with espresso and topped with a caramel drizzle for an oh-so-sweet finish.",
+      "image": "../../images/hot-drinks/latte.jpg"
+    }
+    ,
+    {
+      "id": 4,
+      "title": "Caramel Macchiato",
+      "description": "Freshly steamed milk with vanilla-flavored syrup marked with espresso and topped with a caramel drizzle for an oh-so-sweet finish.",
+      "image": "../../images/hot-drinks/latte.jpg"
+    }
+    ,
+    {
+      "id": 5,
+      "title": "Caramel Macchiato",
+      "description": "Freshly steamed milk with vanilla-flavored syrup marked with espresso and topped with a caramel drizzle for an oh-so-sweet finish.",
+      "image": "../../images/hot-drinks/latte.jpg"
+    }
+  ]
+}

@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import NavigationBar from './components/NavigationBar/NavigationBar';
+import NavigationBar from './components/navigationBar/NavigationBar';
 import App from './App';
 import HotCoffee from './routes/HotCoffee';
 import IcedCoffee from './routes/IcedCoffee';
