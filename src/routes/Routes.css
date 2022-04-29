@@ -9,4 +9,11 @@
 
 .col.drink {
     padding-bottom: 75px;
+    text-align: -webkit-center;
+}
+
+.drinkmodal.card{
+    position: fixed;
+    left: 50%;
+    top: 50%;
 }

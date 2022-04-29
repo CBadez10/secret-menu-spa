@@ -1,17 +1,18 @@
 import './DrinkCard.css';
-import lattePic from '../../images/hot-drinks/latte.jpg'
+import { Card, Button } from 'react-bootstrap';
 
 const DrinkCard = (props) => {
+
     return (
         <>
-        <div class="card" style={{width: '20rem'}}>
-            <img src={props.imageSource} class="card-img-top" alt="" />
-            <div class="card-body">
-                <h5 class="card-title">{props.drinkName}</h5>
-                <p class="card-text">{props.drinkDescription}</p>
-                <a href="#" class="btn btn-primary">Recipe</a>
-            </div>
-        </div>
+        <Card style={{ width: '20rem' }}>
+            <Card.Img variant="top" src={props.imageSource} />
+            <Card.Body>
+                <Card.Title>{props.drinkName}</Card.Title>
+                <Card.Text>{props.drinkDescription}</Card.Text>
+                <Button onClick={props.handler} variant="primary">Recipe</Button>
+            </Card.Body>
+        </Card>
         </>
     );
 };
