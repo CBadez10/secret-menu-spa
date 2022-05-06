@@ -5,6 +5,7 @@ import DrinkCard from "../components/drinkCard/DrinkCard"
 import $ from 'jquery';
 import lattePic from '../images/hot-drinks/latte.jpg';
 import './Routes.css'
+import DrinkModal from "../components/drinkModal/DrinkModal";
 
 const HotCoffee = (props) => {
 
@@ -12,8 +13,6 @@ const HotCoffee = (props) => {
     const [modal, setModal] = useState();
     const [drink, setDrink] = useState();
 
-    const wrapperRef = useRef(null);
-  useOutsideAlerter(wrapperRef);
 
   /**
    * Decides to render the drink modal when a recipe is clicked
@@ -33,30 +32,6 @@ const HotCoffee = (props) => {
         }
     }
 
-    /**
-     * Used to detect clicks outside a modal
-     * @param {*} ref 
-     */
-    function useOutsideAlerter(ref) {
-        useEffect(() => {
-          /**
-           * Alert if clicked on outside of element
-           */
-          function handleClickOutside(event) {
-            if (ref.current && !ref.current.contains(event.target)) {
-              renderDrinkModal();
-            }
-          }
-          // Bind the event listener
-          document.addEventListener("mousedown", handleClickOutside);
-          return () => {
-            // Unbind the event listener on clean up
-            document.removeEventListener("mousedown", handleClickOutside);
-          };
-        }, [ref]);
-      }
-
-      
     useEffect(() => {
         api.get().then((response) => {
             setDrinks(response.data);
@@ -81,48 +56,7 @@ const HotCoffee = (props) => {
             </div>
         {modal && 
         <>
-            <Card className="drinkmodal" ref={wrapperRef}>
-                <Card.Img variant="top" src={drink.image} />
-                <Card.Body>
-                    <Card.Title>{drink.title}</Card.Title>
-                    <Card.Text>{drink.description}</Card.Text>
-                    <Tabs defaultActiveKey="grande" id="uncontrolled-tab-example" className="mb-3">
-                    <Tab eventKey="short" title="Short">
-                        <ListGroup>
-                            <ListGroup.Item>Milk: {drink.recipe.milk}</ListGroup.Item>
-                            <ListGroup.Item>Espresso Shots: {drink.recipe.espresso.size.short}</ListGroup.Item>
-                            <ListGroup.Item>Syrup Flavor: {drink.recipe.syrup.flavor}</ListGroup.Item>
-                            <ListGroup.Item>Syrup Pumps: {drink.recipe.syrup.pumps.size.short}</ListGroup.Item>
-                        </ListGroup>
-                        </Tab>
-                        <Tab eventKey="tall" title="Tall">
-                        <ListGroup>
-                            <ListGroup.Item>Milk: {drink.recipe.milk}</ListGroup.Item>
-                            <ListGroup.Item>Espresso Shots: {drink.recipe.espresso.size.tall}</ListGroup.Item>
-                            <ListGroup.Item>Syrup Flavor: {drink.recipe.syrup.flavor}</ListGroup.Item>
-                            <ListGroup.Item>Syrup Pumps: {drink.recipe.syrup.pumps.size.tall}</ListGroup.Item>
-
-                        </ListGroup>
-                        </Tab>
-                        <Tab eventKey="grande" title="Grande">
-                        <ListGroup>
-                            <ListGroup.Item>Milk: {drink.recipe.milk}</ListGroup.Item>
-                            <ListGroup.Item>Espresso Shots: {drink.recipe.espresso.size.grande}</ListGroup.Item>
-                            <ListGroup.Item>Syrup Flavor: {drink.recipe.syrup.flavor}</ListGroup.Item>
-                            <ListGroup.Item>Syrup Pumps: {drink.recipe.syrup.pumps.size.grande}</ListGroup.Item>
-                        </ListGroup>
-                        </Tab>
-                        <Tab eventKey="venti" title="Venti">
-                        <ListGroup>
-                            <ListGroup.Item>Milk: {drink.recipe.milk}</ListGroup.Item>
-                            <ListGroup.Item>Espresso Shots: {drink.recipe.espresso.size.venti}</ListGroup.Item>
-                            <ListGroup.Item>Syrup Flavor: {drink.recipe.syrup.flavor}</ListGroup.Item>
-                            <ListGroup.Item>Syrup Pumps: {drink.recipe.syrup.pumps.size.venti}</ListGroup.Item>
-                        </ListGroup>
-                        </Tab>
-                    </Tabs>
-                </Card.Body>
-            </Card>
+        <DrinkModal drink={drink} renderDrinkModal={renderDrinkModal} />
         </>
         }
         </div>
