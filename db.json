@@ -3,34 +3,157 @@
     {
       "id": 1,
       "title": "Caffè Latte",
-      "description": "Dark, rich espresso balanced with steamed milk and a light layer of foam. A perfect milk-forward warm-up.",
-      "image": "../../images/hot-drinks/latte.jpg"
+      "description": "Rich, full-bodied espresso in steamed milk, lightly topped with foam.",
+      "image": "../../images/hot-drinks/latte.jpg",
+      "recipe": {
+        "milk": "2%",
+        "topping": null,
+        "whippedCream": false,
+        "custom": null,
+        "syrup": {
+          "flavor": null,
+          "pumps": {
+            "size": {
+              "short": 2,
+              "tall": 3,
+              "grande": 4,
+              "venti": 5
+            }
+          }
+        },
+        "espresso": {
+          "size": {
+            "short": 1,
+            "tall": 1,
+            "grande": 2,
+            "venti": 2
+          }
+        }
+      }
     },
     {
       "id": 2,
       "title": "Caffè Mocha",
       "description": "Rich, full-bodied espresso combined with bittersweet mocha sauce and steamed milk, then topped with sweetened whipped cream. The classic coffee drink that always sweetly satisfies.",
-      "image": "../../images/hot-drinks/latte.jpg"
+      "image": "../../images/hot-drinks/latte.jpg",
+      "recipe": {
+        "milk": "2%",
+        "topping": null,
+        "whippedCream": false,
+        "custom": null,
+        "syrup": {
+          "flavor": "Mocha",
+          "pumps": {
+            "size": {
+              "short": 2,
+              "tall": 3,
+              "grande": 4,
+              "venti": 5
+            }
+          }
+        },
+        "espresso": {
+          "size": {
+            "short": 1,
+            "tall": 1,
+            "grande": 2,
+            "venti": 2
+          }
+        }
+      }
     },
     {
       "id": 3,
       "title": "Caramel Macchiato",
-      "description": "Freshly steamed milk with vanilla-flavored syrup marked with espresso and topped with a caramel drizzle for an oh-so-sweet finish.",
-      "image": "../../images/hot-drinks/latte.jpg"
-    }
-    ,
+      "description": "Freshly steamed milk with vanilla-flavored syrup marked with espresso and topped with a caramel drizzle.",
+      "image": "../../images/hot-drinks/latte.jpg",
+      "recipe": {
+        "milk": "2%",
+        "topping": "caramel drizzle",
+        "whippedCream": false,
+        "custom": null,
+        "syrup": {
+          "flavor": "vanilla",
+          "pumps": {
+            "size": {
+              "short": 1,
+              "tall": 2,
+              "grande": 3,
+              "venti": 4
+            }
+          }
+        },
+        "espresso": {
+          "size": {
+            "short": 1,
+            "tall": 1,
+            "grande": 2,
+            "venti": 2
+          }
+        }
+      }
+    },
     {
       "id": 4,
-      "title": "Caramel Macchiato",
-      "description": "Freshly steamed milk with vanilla-flavored syrup marked with espresso and topped with a caramel drizzle for an oh-so-sweet finish.",
-      "image": "../../images/hot-drinks/latte.jpg"
-    }
-    ,
+      "title": "Cappuccino",
+      "description": "Espresso with steamed milk, topped wiht a deep layer of foam.",
+      "image": "../../images/hot-drinks/latte.jpg",
+      "recipe": {
+        "milk": "2%",
+        "topping": null,
+        "whippedCream": false,
+        "custom": null,
+        "syrup": {
+          "flavor": null,
+          "pumps": {
+            "size": {
+              "short": 2,
+              "tall": 3,
+              "grande": 4,
+              "venti": 5
+            }
+          }
+        },
+        "espresso": {
+          "size": {
+            "short": 1,
+            "tall": 1,
+            "grande": 2,
+            "venti": 2
+          }
+        }
+      }
+    },
     {
       "id": 5,
-      "title": "Caramel Macchiato",
-      "description": "Freshly steamed milk with vanilla-flavored syrup marked with espresso and topped with a caramel drizzle for an oh-so-sweet finish.",
-      "image": "../../images/hot-drinks/latte.jpg"
+      "title": "Cinnamon Dolce Latte",
+      "description": "Espresso with steamed milk and cinnamon dolce-flavored syrup. Topped with whipped cream and cinnamon dulce sprinkles.",
+      "image": "../../images/hot-drinks/latte.jpg",
+      "recipe": {
+        "milk": "2%",
+        "topping": "Cinnamon Dolce Sprinkles",
+        "whippedCream": true,
+        "custom": null,
+        "syrup": {
+          "flavor": "Cinnamon Dolce",
+          "pumps": {
+            "size": {
+              "short": 2,
+              "tall": 3,
+              "grande": 4,
+              "venti": 5
+            }
+          }
+        },
+        "espresso": {
+          "size": {
+            "short": 1,
+            "tall": 1,
+            "grande": 2,
+            "venti": 2
+          }
+        }
+      }
     }
   ]
 }

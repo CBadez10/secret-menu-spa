@@ -3,6 +3,11 @@
     src: local(Inter-SemiBold), url(../src/fonts/Inter-SemiBold.ttf) format('truetype');
 }
 
+@font-face {
+    font-family: Inter-Medium;
+    src: local(Inter-Medium), url(../src/fonts/Inter-Medium.ttf) format('truetype');
+}
+
 body {
     font-family: 'Inter-SemiBold' !important;
 }

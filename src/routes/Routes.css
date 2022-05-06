@@ -14,6 +14,14 @@
 
 .drinkmodal.card{
     position: fixed;
-    left: 50%;
-    top: 50%;
+    left: 15%;
+    top: 15%;
+    right: 15%;
+    bottom:15%;
+    flex-direction: inherit;
+}
+
+
+.card-text {
+    font-family: Inter-Medium;
 }
